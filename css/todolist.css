@@ -1,0 +1,129 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #D38312;  /* fallback for old browsers */
+background: -webkit-linear-gradient(left, #A83279, #D38312);
+background: -moz-linear-gradient(left, #A83279, #D38312);
+background: -o-linear-gradient(left, #A83279, #D38312);
+background: linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+  box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+  margin: 80px auto 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  background: #2980b9;
+  color: #fff;
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.fa-plus-circle {
+  float: right;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.fa-times-circle {
+  float: right;
+  color: #2980b9;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.hidden {
+  display: none;
+}
+
+#textInput label {
+  color: #2980b9;
+  display: inline-block;
+  float: right;
+  margin: 0 0 -50px;
+  padding: 18px 12px 0 0;
+  position: relative;
+  z-index: 1000;
+}
+
+input {
+  width: 100%;
+  font-size: 18px;
+  background: #f7f7f7;
+  padding: 0 0 0 12px;
+  box-sizing: border-box;
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: #bfbfbf;
+}
+
+input:focus {
+  background: #fff;
+  outline: none;
+  border: 2px solid #2980b9;
+  color: #666;
+}
+
+ul {
+  box-sizing: border-box;
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+li {
+  background: #fff;
+  cursor: pointer;
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+}
+
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+.delete {
+  background: #b2221a;
+  margin-right: 20px;
+  text-align: center;
+  height: 40px;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
+}
+
+.fa-trash-o {
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.completed {
+  color: #c7d3e5;
+  text-decoration: line-through;
+}
